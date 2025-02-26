@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+    <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="First集求法 FIRST(α) 是由 α 推导出的所有的文法符号串的第一个终结符号组成的集合，即: FIRST(α) = {a | α ⇨* aγ, a ∈ VT },如">
 <title>编译原理——First集和Follow集</title>
 
-<link rel='canonical' href='http://localhost:1313/p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86first%E9%9B%86%E5%92%8Cfollow%E9%9B%86/'>
+<link rel='canonical' href='https://Qqjsje.github.io/p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86first%E9%9B%86%E5%92%8Cfollow%E9%9B%86/'>
 
 <link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="编译原理——First集和Follow集">
 <meta property='og:description' content="First集求法 FIRST(α) 是由 α 推导出的所有的文法符号串的第一个终结符号组成的集合，即: FIRST(α) = {a | α ⇨* aγ, a ∈ VT },如">
-<meta property='og:url' content='http://localhost:1313/p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86first%E9%9B%86%E5%92%8Cfollow%E9%9B%86/'>
+<meta property='og:url' content='https://Qqjsje.github.io/p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86first%E9%9B%86%E5%92%8Cfollow%E9%9B%86/'>
 <meta property='og:site_name' content='Timo'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-02-25T15:04:37&#43;08:00'/><meta property='article:modified_time' content='2025-02-25T15:04:37&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-02-26T15:04:37&#43;08:00'/><meta property='article:modified_time' content='2025-02-26T15:04:37&#43;08:00'/><meta property='og:image' content='https://Qqjsje.github.io/p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86first%E9%9B%86%E5%92%8Cfollow%E9%9B%86/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86-%E5%B0%81%E9%9D%A2.png' />
 <meta name="twitter:title" content="编译原理——First集和Follow集">
-<meta name="twitter:description" content="First集求法 FIRST(α) 是由 α 推导出的所有的文法符号串的第一个终结符号组成的集合，即: FIRST(α) = {a | α ⇨* aγ, a ∈ VT },如">
+<meta name="twitter:description" content="First集求法 FIRST(α) 是由 α 推导出的所有的文法符号串的第一个终结符号组成的集合，即: FIRST(α) = {a | α ⇨* aγ, a ∈ VT },如"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://Qqjsje.github.io/p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86first%E9%9B%86%E5%92%8Cfollow%E9%9B%86/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86-%E5%B0%81%E9%9D%A2.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
   
@@ -263,10 +264,30 @@
 
 
             <main class="main full-width">
-    <article class="main-article">
+    <article class="has-image main-article">
     <header class="article-header">
+        <div class="article-image">
+            <a href="/p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86first%E9%9B%86%E5%92%8Cfollow%E9%9B%86/">
+                <img src="/p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86first%E9%9B%86%E5%92%8Cfollow%E9%9B%86/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86-%E5%B0%81%E9%9D%A2_hu6616460019316929272.png"
+                        srcset="/p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86first%E9%9B%86%E5%92%8Cfollow%E9%9B%86/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86-%E5%B0%81%E9%9D%A2_hu6616460019316929272.png 800w, /p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86first%E9%9B%86%E5%92%8Cfollow%E9%9B%86/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86-%E5%B0%81%E9%9D%A2_hu18260267737030867379.png 1600w"
+                        width="800" 
+                        height="358" 
+                        loading="lazy"
+                        alt="Featured image of post 编译原理——First集和Follow集" />
+                
+            </a>
+        </div>
+    
 
     <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/" >
+                编译原理
+            </a>
+        
+    </header>
     
 
     <div class="article-title-wrapper">
@@ -293,7 +314,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2025-02-25</time>
+                <time class="article-time--published">2025-02-26</time>
             </div>
         
 
